@@ -1,0 +1,112 @@
+
+.headerContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    height: auto;
+}
+
+h1{
+    text-align: center;
+}
+.btn{
+    font-size: 1rem;
+    padding: 0.4rem 0.9rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--btn-color);
+    color: white;
+    transition: font-size 0.15s;
+}
+
+.btn:hover{
+    transform: translateY(-2px);
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 70%;
+    gap: 3rem;
+}
+
+.fieldContainer{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+.profile,
+.exp,
+.desc {
+    width: 25rem;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    transition: 0.2s;
+}
+
+.profile:focus,
+.exp:focus,
+.desc:focus {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+    outline: none;
+}
+
+.profile{
+    height: 3rem;
+}
+.exp{
+    height: 3rem;
+}
+.desc{
+    height: 10rem;
+    padding: 12px;
+    text-align: left;
+    vertical-align: top;
+}
+
+.skillBoxes{
+     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 1rem;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.skillItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: 0.2s;
+    background: white;
+}
+
+.skillItem:hover {
+    border-color: #4f46e5;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    accent-color: #4f46e5; /* modern browsers shortcut */
+    cursor: pointer;
+}
+
+.skillText {
+    font-size: 14px;
+    text-transform: capitalize;
+}
